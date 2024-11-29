@@ -56,6 +56,8 @@ app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 })
 
+
+//specify movie to delete by id
 app.delete('/api/movie/:id', async (req, res) => {
   
   console.log('Deleting movie with ID:', req.params.id);

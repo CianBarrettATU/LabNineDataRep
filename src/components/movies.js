@@ -8,4 +8,4 @@ const Movies = (props)=>{
     );
 }
 
-export default Movies;
+export default Movies; 

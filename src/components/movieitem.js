@@ -7,7 +7,7 @@ import axios from "axios";
 function MovieItem(props) {
   const handleDelete = (e) => {
       e.preventDefault();
-      axios.delete('http://localhost:4000/api/movie/' + props.mymovie._id)
+      axios.delete('http://localhost:4000/api/movie/' + props.mymovie._id)//sending delete req to server at specified url
           .then(() => {
               props.Reload(); // Refresh the movie list after deletion
           })
@@ -16,6 +16,8 @@ function MovieItem(props) {
           });
   }; // Only run this effect when the mymovie prop changes
 
+
+  //handleDelete called when delete clicked
   return (
     <div>
       <Card>
